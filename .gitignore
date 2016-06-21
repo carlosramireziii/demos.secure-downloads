@@ -14,3 +14,7 @@
 
 # Ignore Ruby gem source code.
 /vendor/bundle
+
+# Ignore environment-specific files
+/config/database.yml
+/.env
