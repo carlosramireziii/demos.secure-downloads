@@ -1,0 +1,2 @@
+module Documents::DownloadsHelper
+end

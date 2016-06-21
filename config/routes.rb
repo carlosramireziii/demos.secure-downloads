@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :documents
+  resources :documents do
+    resource :downloads, only: [:show], controller: "documents/downloads"
+  end
   root to: redirect("/documents")
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
