@@ -35,6 +35,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Clearance for authentication
 gem 'clearance', '~> 1.14.1'
 
+# Use CarrierWave for file uploads
+gem 'carrierwave', '~> 0.11.2'
+gem 'fog', '~> 1.38.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
