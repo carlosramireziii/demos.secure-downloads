@@ -2,7 +2,10 @@ require 'test_helper'
 
 class DocumentsControllerTest < ActionController::TestCase
   setup do
+    @current_user = users(:one)
     @document = documents(:one)
+
+    sign_in_as(@current_user)
   end
 
   test "should get index" do

@@ -24,7 +24,7 @@ class DocumentsController < ApplicationController
   # POST /documents
   # POST /documents.json
   def create
-    @document = Document.new(document_params)
+    @document = Document.new(document_params_with_user)
 
     respond_to do |format|
       if @document.save
@@ -69,6 +69,10 @@ class DocumentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def document_params
-      params.require(:document).permit(:user_id, :name)
+      params.require(:document).permit(:name)
+    end
+
+    def document_params_with_user
+      document_params.merge(user: current_user)
     end
 end
