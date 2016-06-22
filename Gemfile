@@ -35,6 +35,10 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 # Use Clearance for authentication
 gem 'clearance', '~> 1.14.1'
 
+# Use Paperclip for file uploads
+gem 'paperclip', '~> 4.3.6'
+gem 'aws-sdk', '~> 1.6'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'
