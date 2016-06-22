@@ -5,7 +5,8 @@ class Document < ActiveRecord::Base
 
   has_attached_file :file,
                     storage: :s3,
-                    s3_credentials: Proc.new{|a| a.instance.s3_credentials }
+                    s3_credentials: Proc.new{|a| a.instance.s3_credentials },
+                    s3_permissions: :private
   validates_attachment_content_type :file, content_type: /\Aimage\/.*\Z/
 
   def s3_credentials
