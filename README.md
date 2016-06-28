@@ -1,4 +1,4 @@
-# Secure Downloads Demo
+# Secure Downloads Demo - Refile
 
 ## About
 
@@ -23,6 +23,8 @@ You can learn more about the author
 
 1. Update environment-specific files (`database.yml`, `.env`)
 
+  Be sure to include your AWS S3 credentials
+
 1. Run the Rails server
 
         bin/rails s
@@ -31,18 +33,9 @@ From here you are all set. Demo users have been created from the seed
 file. The credentials are `user1@demo.com:password` and
 `user2@demo.com:password`.
 
-## Examples
+## Refile Example
 
-Examples are included for three of the most popular file upload
-providers: `carrierwave`, `paperclip`, and `refile`. Each has its own
-separate branch.
+### Noteworthy Files
 
-*NOTE*: When switching to a new branch, be sure to do the following
-
-1. Run the database migrations
-
-1. Update the environment-specific files (e.g. `.env`)
-
-  You may want to delete the `.env` file entirely and re-run the
-  `bin/setup` script to generate a new version from the sample file with
-  the required environment variables.
+* [`config/initializers/refile.rb`](https://github.com/carlosramireziii/demos.secure-downloads/blob/refile/config/initializers/refile.rb)
+* [`app/controllers/documents/downloads_controller.rb`](https://github.com/carlosramireziii/demos.secure-downloads/blob/refile/app/controllers/documents/downloads_controller.rb)
