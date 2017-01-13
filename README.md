@@ -4,7 +4,7 @@
 
 This demo application accompanies the blog post titled "Secure File
 Downloads in Rails" and can be [read
-here](http://www.carlosramireziii.com).
+here](https://medium.com/@carlosramireziii/secure-file-download-urls-in-rails-d52128b24311#.odjzdh806).
 
 You can learn more about the author
 [here](http://www.carlosramireziii.com?utm_source=github&utm_campaign=demo-secure_downloads)
